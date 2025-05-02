@@ -1,0 +1,12 @@
+jednostka = input("Podaj jednostke: Celsjusz czy Fahrenheit? (C/F)")
+temp = float(input("Podaj temperature: "))
+
+if jednostka == "C":
+    temp = round((9*temp) / 5 + 32, 1)
+    print(f"Ta temperatura wynosi {temp} °F")
+elif jednostka == "F":
+    temp = round((temp - 32) * 5/9, 1)
+    print(f"Ta temperatura wynosi {temp} °C")
+else:
+    print(f"{jednostka} jest niepoprawna, wprowadz inna jednostke.")
+
